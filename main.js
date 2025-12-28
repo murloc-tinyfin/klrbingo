@@ -1,6 +1,6 @@
 // categories for bingo spaces
 const generic_songs = ["A theme from crystal shards", "A theme from super star (ultra)", "A theme from mass attack",
-                       "A theme from return to dream land (deluxe)", "A theme from (extra) epic yarn", 
+                       "A theme from return to dream land (deluxe)", 
                        "A theme from triple deluxe", "A theme from planet robobot", 
                        "A theme from star allies", "A theme from forgotten land"/*mainline titles*/,
                        "A theme from air ride",  "A theme from rainbow curse", "A theme from (extra) epic yarn",
@@ -150,3 +150,4 @@ function restoreBoard() {
 
 // restore on load
 window.addEventListener('load', restoreBoard);
+
