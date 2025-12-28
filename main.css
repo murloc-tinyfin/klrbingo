@@ -16,7 +16,7 @@ header {
 }
 
 h1 {
-    color: #E8ADAA;
+    color: rose;
 }
 
 #bingo-board {
@@ -111,6 +111,15 @@ button:active {
     padding: 0 20%;
 }
 
+#rules h2 {
+    margin-right: 90%;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #ff69b4;
+}
+
+#rules ol {
+    background-color: rgba(255, 255, 255, 0.8);
+}
 footer {
     margin-top: 20px;
     font-size: 14px;
@@ -125,4 +134,3 @@ footer a {
 footer a:hover {
     text-decoration: underline;
 }
-
