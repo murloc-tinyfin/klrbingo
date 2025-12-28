@@ -3,7 +3,7 @@ const generic_songs = ["A theme from crystal shards", "A theme from super star (
                        "A theme from return to dream land (deluxe)", 
                        "A theme from triple deluxe", "A theme from planet robobot", 
                        "A theme from star allies", "A theme from forgotten land"/*mainline titles*/,
-                       "A theme from air ride",  "A theme from rainbow curse", "A theme from (extra) epic yarn",
+                       "A theme from air ride(rs)",  "A theme from rainbow curse", "A theme from (extra) epic yarn",
                        "A theme from fighters 2", "A theme from team kirby clash deluxe/ super kirby clash"/*non-mainline titles*/];
 
 const specific_songs = ["Green green", "CROWNED", "Mind in a program", "Gourmet race", 
@@ -150,4 +150,5 @@ function restoreBoard() {
 
 // restore on load
 window.addEventListener('load', restoreBoard);
+
 
