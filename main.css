@@ -8,7 +8,7 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    color: #3cb371;
+    color: #4682b4;
 }
 
 header {
@@ -16,7 +16,7 @@ header {
 }
 
 h1 {
-    color: #3cb371;
+    color: #ffffff;
 }
 
 #bingo-board {
@@ -30,17 +30,49 @@ table {
 }
 
 td, th {
-    border: 3px solid #87ceeb;
+    border: 3px solid #4682b4;
     padding: 30px;
     text-align: center;
     font-size: 18px;
     width: 120px;
     height: 120px;
     box-sizing: border-box;
+    position: relative;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.8);
 }
 
 th {
     font-size: 350%;
+    background-color: rgba(135, 206, 235, 0.7);
+    color: #ffb6c1;
+}
+
+.marked {
+    background-color: rgba(255, 0, 0, 0.3);
+}
+
+td:hover {
+    background-color: #ff69b4;
+    color: #ffffff;
+    border-color: #000080;
+}
+
+.marked:hover {
+    background-color: rgba(255, 0, 0, 0.3);
+    border-color: #4682b4;
+}
+
+.marked::before {
+    content: 'X';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 48px;
+    color: red;
+    font-weight: bold;
+    pointer-events: none;
 }
 
 #game-controls {
@@ -48,9 +80,29 @@ th {
 }
 
 button {
-    padding: 10px 20px;
-    font-size: 16px;
+    padding: 12px 24px;
+    font-size: 18px;
+    font-weight: bold;
     cursor: pointer;
+    background-color: #ffb6c1;
+    color: #4682b4;
+    border: 3px solid #4682b4;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+    background-color: #ff69b4;
+    color: #ffffff;
+    border-color: #000080;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+button:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 #rules {
