@@ -1,0 +1,75 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+    background-color: #ffb6c1;
+    background-image: url('parasol kirby.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #3cb371;
+}
+
+header {
+    margin-bottom: 20px;
+}
+
+h1 {
+    color: #3cb371;
+}
+
+#bingo-board {
+    margin: 20px auto;
+    display: inline-block;
+}
+
+table {
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+td, th {
+    border: 3px solid #87ceeb;
+    padding: 30px;
+    text-align: center;
+    font-size: 18px;
+    width: 120px;
+    height: 120px;
+    box-sizing: border-box;
+}
+
+th {
+    font-size: 350%;
+}
+
+#game-controls {
+    margin: 20px 0;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#rules {
+    text-align: left;
+    margin: 20px 0;
+    padding: 0 20%;
+}
+
+footer {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+footer a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #007bff;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
