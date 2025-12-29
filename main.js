@@ -13,7 +13,7 @@ const specific_songs = ["Green green", "CROWNED", "Mind in a program", "Gourmet 
                     
 const albums = ["An azifly theme", "A theme from orchestra", "A theme from Kirbtunes", "A theme from kirby rip attack"];
 
-const generic_gameplay = ["Adventure gameplay", "Dream land 2 gameplay", "Super star (ultra) gameplay", "Dream land 3 gameplay", 
+const generic_gameplay = ["Adventure/Nightmare in dreamland gameplay", "Dream land 2 gameplay", "Super star (ultra) gameplay", "Dream land 3 gameplay", 
                   "Crystal shard gameplay", "Amazing mirror gameplay", "Squeak squad gameplay", "Return to dream land (deluxe) gameplay",
                   "Triple deluxe gameplay", "Planet robobot gameplay", "Star allies gameplay", "Forgotten land gameplay"/*mainline titles*/,
                   "Air ride gameplay", "(extra) epic yarn gameplay", "Rainbow curse gameplay"/*non-mainline titles*/];
@@ -25,6 +25,7 @@ const generic_themed_songs = ["A grass theme", "A water theme", "A space theme",
 
 const specific_themed_songs = ["A theme from one of the 4 knights", "A final boss theme", "Favourite theme playing", "A theme from the game in gameplay",
                                "A mini boss theme", "A remixed theme from previous games", "2 themes in a row from the same game"];
+
 const miscellaneous = ["MARX JUMPSCARE (anything marx related show up)", "Get 300 xp in chat", "The parasol kirbies line up", 
                        "@poyostar appearence", "@kirbisbestpoyo appearence", "@hi_im_awkward appearance", "@kahomapler appearance",
                        ">15 people in chat", "<5 people in chat", "Background change", "Chat spam(more than 5 similar messages)",];
@@ -150,5 +151,6 @@ function restoreBoard() {
 
 // restore on load
 window.addEventListener('load', restoreBoard);
+
 
 
