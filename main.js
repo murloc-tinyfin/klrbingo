@@ -1,34 +1,35 @@
+
 // categories for bingo spaces
 const generic_songs = ["A theme from crystal shards", "A theme from super star (ultra)", "A theme from mass attack",
                        "A theme from return to dream land (deluxe)", 
                        "A theme from triple deluxe", "A theme from planet robobot", 
                        "A theme from star allies", "A theme from forgotten land"/*mainline titles*/,
                        "A theme from air ride(rs)",  "A theme from rainbow curse", "A theme from (extra) epic yarn",
-                       "A theme from fighters 2", "A theme from team kirby clash deluxe/ super kirby clash"/*non-mainline titles*/];
+                       "A theme from fighters (2)", "A theme from team kirby clash deluxe/ super kirby clash"/*non-mainline titles*/];
 
 const specific_songs = ["Green green", "CROWNED", "Mind in a program", "Gourmet race", 
-                        "You just got ALIVEL MALLED", "HEAVY LOBSTER",
-                        "Meta Knight's Revenge", "King Dedede's Theme", "Planet popstar 64",
-                        "Strongest warrior in the galaxy", "Zero 2", "Moonstruck blossom"];
+                        "You just got ALIVEL MALLED", "HEAVY LOBSTER", "Float island", 
+                        "Meta Knight's Revenge", "King Dedede's Theme",
+                        "Strongest warrior in the galaxy", "Zero 2", "Moonstruck blossom", "The adventure begins rtdl"];
                     
-const albums = ["An azifly theme", "A theme from orchestra", "A theme from Kirbtunes", "A theme from kirby rip attack"];
+const albums = ["An azifly theme aka 86 memories", "A theme from orchestra", "A theme from Kirbtunes", "A theme from kirby rip attack", 
+                "A theme from kirby cafe", "A theme from the super star symphony", "A theme from smash"];
 
-const generic_gameplay = ["Adventure/Nightmare in dreamland gameplay", "Dream land 2 gameplay", "Super star (ultra) gameplay", "Dream land 3 gameplay", 
-                  "Crystal shard gameplay", "Amazing mirror gameplay", "Squeak squad gameplay", "Return to dream land (deluxe) gameplay",
-                  "Triple deluxe gameplay", "Planet robobot gameplay", "Star allies gameplay", "Forgotten land gameplay"/*mainline titles*/,
-                  "Air ride gameplay", "(extra) epic yarn gameplay", "Rainbow curse gameplay"/*non-mainline titles*/];
+const generic_gameplay = ["A mainline game gameplay", "A spin-off game gameplay", "A game from before rtdl", "A game from after rtdl including rtdl"];
 
 //const specific_gameplay = [];  (left empty for now)
 
 const generic_themed_songs = ["A grass theme", "A water theme", "A space theme",  "A sky theme", "A desert theme", 
-                              "A forest theme", "A mechanical theme", "A volcano theme", "A beach theme", "A wind theme"];
+                              "A forest theme", "A mechanical theme", "A volcano theme", "A beach theme", "A wind theme", "A ice theme"];
 
 const specific_themed_songs = ["A theme from one of the 4 knights", "A final boss theme", "Favourite theme playing", "A theme from the game in gameplay",
-                               "A mini boss theme", "A remixed theme from previous games", "2 themes in a row from the same game"];
+                               "A mini boss theme", "A remixed theme from previous games", "2 themes in a row from the same game", "A minigame theme", 
+                               "A side mode theme eg. magolor's epilogue", "A theme with food in its name", "A dream friend theme"];
 
 const miscellaneous = ["MARX JUMPSCARE (anything marx related show up)", "Get 300 xp in chat", "The parasol kirbies line up", 
-                       "@poyostar appearence", "@kirbisbestpoyo appearence", "@hi_im_awkward appearance", "@kahomapler appearance",
-                       ">15 people in chat", "<5 people in chat", "Background change", "Chat spam(more than 5 similar messages)",];
+                       "@kirbisbestpoyo appearence", "@hi_im_awkward appearance", "@kahomapler appearance",
+                       ">12 people in chat", "<5 people in chat", "Background change", "Chat spam(more than 5 similar messages)", 
+                       "People from different continents in chat"];
 
 
 
@@ -79,11 +80,11 @@ function generate_bingo_board(savedCombined = null, skipConfirm = false) {
         // pick the corrsponding number of random items from each category
         const shuffled_generic_songs = pickRandomItems(generic_songs, 4);
         const shuffled_specific_songs = pickRandomItems(specific_songs, 5);
-        const shuffled_albums = pickRandomItems(albums, 1);
-        const shuffled_generic_gameplay = pickRandomItems(generic_gameplay, 3);
+        const shuffled_albums = pickRandomItems(albums, 2);
+        const shuffled_generic_gameplay = pickRandomItems(generic_gameplay, 1);
         const shuffled_generic_themed_songs = pickRandomItems(generic_themed_songs, 3);
         const shuffled_specific_themed_songs = pickRandomItems(specific_themed_songs, 5);
-        const shuffled_miscellaneous = pickRandomItems(miscellaneous, 4);
+        const shuffled_miscellaneous = pickRandomItems(miscellaneous, 5);
 
         // combine all the picked items into one array and shuffle them
         combined = [...shuffled_generic_songs, ...shuffled_specific_songs, ...shuffled_albums, ...shuffled_generic_gameplay,
