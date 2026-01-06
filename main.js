@@ -20,11 +20,11 @@ const generic_gameplay = ["A mainline game gameplay", "A spin-off game gameplay"
 //const specific_gameplay = [];  (left empty for now)
 
 const generic_themed_songs = ["A grass theme", "A water theme", "A space theme",  "A sky theme", "A desert theme", 
-                              "A forest theme", "A mechanical theme", "A volcano theme", "A beach theme", "A wind theme", "A ice theme"];
+                              "A forest theme", "A mechanical theme", "A volcano theme", "A beach theme", "A ice theme"];
 
 const specific_themed_songs = ["A theme from one of the 4 knights", "A final boss theme", "A theme from the game in gameplay",
                                "A mini boss theme", "A remixed theme from previous games", "2 themes in a row from the same game", "A minigame theme", 
-                               "A side mode theme eg. magolor's epilogue", "A theme with food in its name", "A dream friend theme"];
+                               "A side mode theme eg. magolor's epilogue", "A theme with food in its name", "A wind theme", "A dream friend theme"];
 
 const miscellaneous = ["MARX JUMPSCARE (anything marx related show up)", "Get 300 xp in chat", "The parasol kirbies line up", 
                        "@kirbisbestpoyo appearence", "@hi_im_awkward appearance", "@kahomapler appearance",
@@ -152,6 +152,7 @@ function restoreBoard() {
 
 // restore on load
 window.addEventListener('load', restoreBoard);
+
 
 
 
