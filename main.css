@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Fredoka', sans-serif;
     text-align: center;
     margin: 0;
     padding: 20px;
@@ -16,7 +16,13 @@ header {
 }
 
 h1 {
-    color: rose;
+    color: rgba(0, 0, 200, 0.67);
+}
+
+h1 span{
+    padding: 5px 10px;
+    border-radius: 15px;
+    background-color: rgba(255, 182, 193, 0.9);
 }
 
 #bingo-board {
@@ -105,21 +111,32 @@ button:active {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
-#rules {
+#rules span{
     text-align: left;
-    margin: 20px 0;
-    padding: 0 20%;
+    margin-left: 20%;
+    margin-right: 20%;
+    background-color: rgba(255, 255, 255, 0.8);
 }
 
 #rules h2 {
-    margin-right: 90%;
-    background-color: rgba(255, 255, 255, 0.8);
     color: #ff69b4;
 }
 
-#rules ol {
+#rules h2 span{
+    padding: 5px;
     background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 15px;
 }
+
+#rules ol {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    margin-left: 20%;
+    margin-right: 20%;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+}
+
 footer {
     margin-top: 20px;
     font-size: 14px;
