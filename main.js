@@ -1,6 +1,6 @@
 
 // categories for bingo spaces
-const generic_songs = ["A theme from crystal shards", "A theme from super star (ultra)", "A theme from kirby and the amazing mirror extended ost",
+const generic_songs = ["A theme from crystal shards", "A theme from super star (ultra)", "A theme from amazing mirror extended ost",
                        "A theme from mass attack", "A theme from return to dream land (deluxe)", 
                        "A theme from triple deluxe", "A theme from planet robobot", 
                        "A theme from star allies", "A theme from forgotten land"/*mainline titles*/,
@@ -154,6 +154,7 @@ function restoreBoard() {
 
 // restore on load
 window.addEventListener('load', restoreBoard);
+
 
 
 
