@@ -15,7 +15,7 @@ const specific_songs = ["Green green", "CROWNED", "Gourmet race", "Invincibility
 const albums = ["An azifly theme aka 86 memories", "A theme from orchestra", "A theme from Kirbtunes", "A theme from kirby rip attack", 
                 "A theme from kirby cafe", "A theme from the super star symphony", "A theme from smash", "A theme from the anime", "A theme from king for another day"];
 
-const generic_gameplay = ["A mainline game gameplay", "A spin-off game gameplay", "A game from before rtdl", "A game from after rtdl including rtdl"];
+const generic_gameplay = ["A mainline game gameplay", "A spin-off game gameplay", "A gameplay game from before rtdl", "A gameplay game from after rtdl including rtdl"];
 
 //const specific_gameplay = [];  (left empty for now)
 
@@ -154,6 +154,7 @@ function restoreBoard() {
 
 // restore on load
 window.addEventListener('load', restoreBoard);
+
 
 
 
