@@ -10,7 +10,7 @@ const generic_songs = ["A theme from crystal shards", "A theme from super star (
 const specific_songs = ["Green green", "CROWNED", "Gourmet race", "Invincibility candy theme", "Ripple star", "Bubbly clouds",
                         "You just got ALIVEL MALLED", "HEAVY LOBSTER", "Float island", "King Dedede's Theme", 
                         "Strongest warrior in the galaxy", "Zero 2", "Moonstruck blossom", "The adventure begins rtdl",
-                        "Castle lololo/ Dyna blade", "Butter building"];
+                        "Castle lololo/ Dyna blade", "Butter building", "Kirby's triumphant return"];
                     
 const albums = ["An azifly theme aka 86 memories", "A theme from orchestra", "A theme from Kirbtunes", "A theme from kirby rip attack", 
                 "A theme from kirby cafe", "A theme from the super star symphony", "A theme from smash", "A theme from the anime", "A theme from king for another day"];
@@ -28,7 +28,7 @@ const specific_themed_songs = ["A theme from one of the 4 knights", "A final bos
                                "A theme that was used in an arena/true arena", "A title/menu theme", "A credits theme", "A theme longer than 5 minutes",
                                "A theme shorter than 1 minute", "A theme with only 1 word in its title"];
 
-const miscellaneous = ["MARX JUMPSCARE (anything marx related show up)", "Get 300 xp in chat", "The parasol kirbies line up", 
+const miscellaneous = ["MARX JUMPSCARE (anything marx related show up)", "Get 300 xp in chat", "dedede in gameplay", "meta knight in gameplay", 
                        "@kirbisbestpoyo appearence", "@hi_im_awkward appearance", "Final boss in gameplay", "@kahomapler appearance",
                        ">12 people in chat", "<5 people in chat", "Background change", "Chat spam(At least 3 similar messages in a row)", 
                        "People from different continents in chat", "2 theme in a row starting with the same letter"];
@@ -54,6 +54,21 @@ function pickRandomItems(array, n) {
     shuffled = shuffleArray(shuffled);
 
     return shuffled.slice(0, n);
+}
+
+// function to mark a cell when clicked
+function markCell(cell) {
+    const index = parseInt(cell.dataset.index);
+    let marked = JSON.parse(localStorage.getItem('markedCells')) || [];
+    if (cell.classList.contains('marked')) {
+        // remove from marked
+        marked = marked.filter(i => i !== index);
+    } else {
+        // add to marked
+        marked.push(index);
+    }
+    localStorage.setItem('markedCells', JSON.stringify(marked));
+    cell.classList.toggle('marked');
 }
 
 // function to generate bingo board
@@ -96,9 +111,9 @@ function generate_bingo_board(savedCombined = null, skipConfirm = false) {
         // reset marked cells for new board
         localStorage.setItem('markedCells', JSON.stringify([]));
     }
-
+    combined[12] = "FREE SPACE"; // center space
     // save the board
-    localStorage.setItem('bingoBoard', JSON.stringify(combined));
+    localStorage.setItem('springBreezeBingoBoard', JSON.stringify(combined));
 
     // generate the bingo board
     let tableHTML = '<table border="1" style="border-collapse: collapse;"><thead><tr><th>K</th><th>I</th><th>R</th><th>B</th><th>Y</th></tr></thead>';
@@ -125,41 +140,27 @@ function generate_bingo_board(savedCombined = null, skipConfirm = false) {
     });
 }
 
-// function to mark a cell when clicked
-function markCell(cell) {
-    const index = parseInt(cell.dataset.index);
-    let marked = JSON.parse(localStorage.getItem('markedCells')) || [];
-    if (cell.classList.contains('marked')) {
-        // remove from marked
-        marked = marked.filter(i => i !== index);
-    } else {
-        // add to marked
-        marked.push(index);
-    }
-    localStorage.setItem('markedCells', JSON.stringify(marked));
-    cell.classList.toggle('marked');
-}
-
 // function to restore the board on page load
 function restoreBoard() {
-    const savedBoard = localStorage.getItem('bingoBoard');
+    let savedBoard = localStorage.getItem('springBreezeBingoBoard');
     if (savedBoard) {
         const combined = JSON.parse(savedBoard);
         generate_bingo_board(combined);
-    } else {
-        // generate a new board on first load without confirmations
-        generate_bingo_board(null, true);
+    } 
+    else {
+        savedBoard = localStorage.getItem('bingoBoard'); // check for old key
+        if (savedBoard) {
+            const combined = JSON.parse(savedBoard);
+            generate_bingo_board(combined);
+        }
+        else {
+            // generate a new board on first load without confirmations
+            generate_bingo_board(null, true);
+        }
     }
 }
 
 // restore on load
 window.addEventListener('load', restoreBoard);
-
-
-
-
-
-
-
 
 
