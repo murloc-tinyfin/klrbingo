@@ -148,9 +148,9 @@ function restoreBoard() {
         generate_bingo_board(combined);
     } 
     else {
-        savedBoard = localStorage.getItem('bingoBoard'); // check for old key
-        if (savedBoard) {
-            const combined = JSON.parse(savedBoard);
+        let oldSavedBoard = localStorage.getItem('bingoBoard'); // check for old key
+        if (oldSavedBoard) {
+            const combined = JSON.parse(oldSavedBoard);
             generate_bingo_board(combined);
         }
         else {
@@ -162,5 +162,6 @@ function restoreBoard() {
 
 // restore on load
 window.addEventListener('load', restoreBoard);
+
 
 
