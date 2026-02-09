@@ -86,7 +86,11 @@ td:hover {
 }
 
 button {
+    height: 60px;
+    width: 180px;
     padding: 12px 24px;
+    margin-left: 10px;
+    margin-right: 10px;
     font-size: 18px;
     font-weight: bold;
     cursor: pointer;
@@ -98,17 +102,45 @@ button {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-button:hover {
-    background-color: #ff69b4;
-    color: #ffffff;
-    border-color: #000080;
-    transform: translateY(-2px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
-}
-
 button:active {
     transform: translateY(0);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+#spring {
+    background-color: rgba(150, 230, 150);
+    border-color: rgba(50, 205, 50);
+    color: rgba(255, 255, 255);
+    text-shadow:
+        -1px -1px 0 rgba(84, 179, 69),
+        1px -1px 0 rgba(84, 179, 69),
+        -1px  1px 0 rgba(84, 179, 69),
+        1px  1px 0 rgba(84, 179, 69);
+}
+
+#spring:hover {
+    background-color: rgba(110, 200, 83);
+    color: #ffffff;
+    border-color: rgba(50, 160, 50);
+    text-shadow: none;
+}
+
+#wild {
+    background-color: rgba(250, 40, 68);
+    border-color: rgba(190, 40, 68);
+    color: rgba(0, 81, 92);
+    text-shadow:
+        -1px -1px 0 rgba(255, 255, 255, 0.7),
+        1px -1px 0 rgba(255, 255, 255, 0.7),
+        -1px  1px 0 rgba(255, 255, 255, 0.7),
+        1px  1px 0 rgba(255, 255, 255, 0.7);
+}
+
+#wild:hover {
+    background-color: rgba(255, 150, 150);
+    color: #ffffff;
+    border-color: rgba(255, 80, 80);
+    text-shadow: none;
 }
 
 #rules span{
