@@ -141,14 +141,18 @@ function generate_bingo_board(savedCombined = null, skipConfirm = false) {
 }
 
 // function to restore the board on page load
+// old key 'bingoBoard'
+// new key 'springBreezeBingoBoard'
 function restoreBoard() {
     let oldSavedBoard = localStorage.getItem('bingoBoard');
     if (oldSavedBoard) {
         const combined = JSON.parse(oldSavedBoard);
+        localStorage.setItem('springBreezeBingoBoard', oldSavedBoard)
+        localStorage.removeItem('bingoBoard')
         generate_bingo_board(combined);
     } 
     else {
-        let savedBoard = localStorage.getItem('springBreezeBingoBoard'); // check for old key
+        let savedBoard = localStorage.getItem('springBreezeBingoBoard');
         if (savedBoard) {
             const combined = JSON.parse(savedBoard);
             generate_bingo_board(combined);
@@ -162,6 +166,7 @@ function restoreBoard() {
 
 // restore on load
 window.addEventListener('load', restoreBoard);
+
 
 
 
