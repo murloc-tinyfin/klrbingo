@@ -50,7 +50,7 @@ function generate_bingo_board(savedCombined = null, skipConfirm = false) {
                     "people from 4 different continents in chat at the same time", "batamon in gameplay", "kirby dies in gameplay", "complete a normal bingo with all 25 spaces", "an old member coming back after 2+ years"];
 
         // reset marked cells for new board
-        localStorage.setItem('markedCells', JSON.stringify([]));
+        localStorage.setItem('wildMarkedCells', JSON.stringify([]));
     }
 
     // save the board
@@ -72,7 +72,7 @@ function generate_bingo_board(savedCombined = null, skipConfirm = false) {
     document.getElementById("bingo-board").innerHTML = tableHTML;
 
     // restore marked cells
-    const marked = JSON.parse(localStorage.getItem('markedCells')) || [];
+    const marked = JSON.parse(localStorage.getItem('wildMarkedCells')) || [];
     marked.forEach(index => {
         const cell = document.querySelector(`td[data-index="${index}"]`);
         if (cell) {
@@ -84,7 +84,7 @@ function generate_bingo_board(savedCombined = null, skipConfirm = false) {
 // function to mark a cell when clicked
 function markCell(cell) {
     const index = parseInt(cell.dataset.index);
-    let marked = JSON.parse(localStorage.getItem('markedCells')) || [];
+    let marked = JSON.parse(localStorage.getItem('wildMarkedCells')) || [];
     if (cell.classList.contains('marked')) {
         // remove from marked
         marked = marked.filter(i => i !== index);
@@ -92,7 +92,7 @@ function markCell(cell) {
         // add to marked
         marked.push(index);
     }
-    localStorage.setItem('markedCells', JSON.stringify(marked));
+    localStorage.setItem('wildMarkedCells', JSON.stringify(marked));
     cell.classList.toggle('marked');
 }
 function restoreBoard() {
@@ -105,6 +105,7 @@ function restoreBoard() {
         generate_bingo_board(null, true);
     }
 }
+
 
 
 
