@@ -12,7 +12,7 @@ const specific_songs = ["Green green", "CROWNED", "Gourmet race", "Invincibility
                         "Strongest warrior in the galaxy", "Zero 2", "Moonstruck blossom", "The adventure begins rtdl",
                         "Castle lololo/ Dyna blade", "Butter building", "Kirby's triumphant return"];
                     
-const albums = ["An azifly theme aka 86 memories", "A theme from orchestra", "A theme from Kirbtunes", "A theme from kirby rip attack", 
+const albums = ["86 memories", "Kirby's Music Lover Final", "A theme from orchestra", "A theme from Kirbtunes", "A theme from kirby rip attack", 
                 "A theme from kirby cafe", "A theme from the super star symphony", "A theme from smash", "A theme from the anime", "A theme from king for another day"];
 
 const generic_gameplay = ["A mainline game gameplay", "A spin-off game gameplay", "A gameplay game from before rtdl", "A gameplay game from after rtdl including rtdl"];
