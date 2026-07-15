@@ -29,7 +29,7 @@ const specific_themed_songs = ["A theme from one of the 4 knights", "A final bos
                                "A theme shorter than 1 minute", "A theme with only 1 word in its title"];
 
 const miscellaneous = ["MARX JUMPSCARE (anything marx related show up)", "Get 300 xp in chat", "dedede in gameplay", "meta knight in gameplay", 
-                       "@kirbisbestpoyo appearence", "@hi_im_awkward appearance", "Final boss in gameplay", "@kahomapler appearance",
+                       "@kirbisbestpoyo appearence", "@hi_im_awkward appearance", "Final boss in gameplay", 
                        ">12 people in chat", "<5 people in chat", "Background change", "Chat spam(At least 3 similar messages in a row)", 
                        "People from different continents in chat", "2 theme in a row starting with the same letter"];
 
