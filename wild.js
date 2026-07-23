@@ -43,7 +43,7 @@ function generate_bingo_board(savedCombined = null, skipConfirm = false) {
         if (!proceed) {return;}
 
         }
-        combined = [">25 people in chat", "synced parasol kirbies", "matching theme", "same theme back to back (can be remix)", "@poyostar appearence",
+        combined = [">25 people in chat", "Predict what album the next theme is from in chat", "matching theme", "same theme back to back (can be remix)", "@poyostar appearence",
                     "a theme from kirby fighters 1", "get 1000 xp on the leaderboard", "a wind theme", "a song that lasts exactly 86 seconds", "dreamland 1 gameplay",
                     "kirby slide gameplay", "big bean vine", "faded dreams of a phychomeddler", "the Italian anime opening theme", "a theme from each of the seasons",
                     "A theme with kirby VA", "friendly field", "3 themes in a row from the same game", "#1,2,3 of the leaderboard in chat at the same time", "shadow kirby chapter 5",
