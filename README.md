@@ -1,8 +1,8 @@
-<p>The Kirby Live Radio Bingo, or just the KLR Bingo, is... well, just as it sounds like: a KLR-themed bingo. Thought up by <a href="https://kirby-live-radio.fandom.com/wiki/Hi_I%27m_awkward">Hi I'm awkward</a> and <a href="https://kirby-live-radio.fandom.com/wiki/Kirbisbest">Kirbisbest</a> on December 24th 2025, the KLR Bingo is an activity for chat members to play while listening to and chatting in the <a href="https://www.youtube.com/@commanderjersey/live">Kirby Live Radio</a> if they wish. There are currently no rewards other than feeling good about yourself for getting a winning bingo, however one day maybe a real bingo event will be organized; so stay tuned.
+<p>The Kirby Live Radio Bingo, or just the KLR Bingo, is... well, just as it sounds like: a KLR-themed bingo. Thought up by <a href="https://kirby-live-radio.fandom.com/wiki/Hi_I%27m_awkward" target="_blank">Hi I'm awkward</a> and <a href="https://kirby-live-radio.fandom.com/wiki/Kirbisbest" target="_blank">Kirbisbest</a> on December 24th 2025, the KLR Bingo is an activity for chat members to play while listening to and chatting in the <a href="https://www.youtube.com/@commanderjersey/live" target="_blank">Kirby Live Radio</a> if they wish. There are currently no rewards other than feeling good about yourself for getting a winning bingo, however one day maybe a real bingo event will be organized; so stay tuned.
 
 The bingo cards occasionally get patches to them to help amend the difficulty and change up the bingo squares every once in a while. There may be new difficulties of bingo cards in the future depending on the interest. Ideas for bingo spaces are always appreciated from members of the chat, they may just get added to the bingo cards. :3
 
-<a href="https://murloc-tinyfin.github.io/klrbingo/">Here’s the link to the game itself for those who wanna try it out.</a> Feel free to leave any suggestions. :]
+<a href="https://murloc-tinyfin.github.io/klrbingo/" target="_blank">Here’s the link to the game itself for those who wanna try it out.</a> Feel free to leave any suggestions. :]
 </p>
 <h1>Rules for Bingo</h1>
 <p>
